@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        double basic = sc.nextDouble();
+
+        double da = 0.40 * basic;
+        double hra = 0.20 * basic;
+        double gross = basic + da + hra;
+
+        System.out.printf("%.2f%n", basic);
+        System.out.printf("%.2f%n", da);
+        System.out.printf("%.2f%n", hra);
+        System.out.printf("%.2f%n", gross);
+
+        sc.close();
+    }
+}
